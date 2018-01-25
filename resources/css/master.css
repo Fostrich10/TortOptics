@@ -49,6 +49,10 @@ header {
   margin: 1rem;
 }
 
+.small {
+  display: none;
+}
+
 .container.ad {
   justify-content: flex-end;
   position: relative;
@@ -155,9 +159,53 @@ footer .logo {
 
 }
 
+@media only screen and (max-width: 720px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: inline;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 615px) {
   header {
     height: 17rem;
     background-position: 20%;
   }
+
+  .container.ad {
+    justify-content: center;
+    position: relative;
+    top: 9rem;
+    left: 0;
+  }
+
+  .ad h1 {
+    padding: 1rem auto;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+  }
+
+  .tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tag {
+    margin: .77rem;
+    font-size: .77rem;
+  }
+
 }

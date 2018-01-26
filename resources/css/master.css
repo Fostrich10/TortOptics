@@ -208,4 +208,38 @@ footer .logo {
     font-size: .77rem;
   }
 
+  .infoBars {
+    flex-direction: column;
+  }
+
+  .infoBar {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+
+  .infoBar h2 {
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+  }
+
+  .infoBar p {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .logo img {
+    margin-left: 0;
+  }
+
+  footer span {
+    display: none;
+  }
+
 }
